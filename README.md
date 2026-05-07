@@ -1,3 +1,4 @@
 本库是软件项目研发实践的GitHub库
 其中experiment1-4md文档为课上练习实验报告
+images保存了实验报告里的图片文件
 期末大作业为final
