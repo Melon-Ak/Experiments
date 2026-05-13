@@ -22,6 +22,9 @@
 
 按照官方 Android 教程，创建并运行第一个 Kotlin 编写的 Android 应用。熟悉 Android Studio 开发环境，掌握项目创建、代码编写、界面布局和运行调试的基本流程。
 
+**完成截图：**
+![任务一完成截图](images/MyFirstKotlinApp.png)
+
 ### 任务二：完成 Compose 布局的实践
 
 学习 Jetpack Compose 声明式 UI 框架，掌握 Compose 的核心概念和布局组件使用。通过实践熟练运用 Compose 进行现代化的 Android 界面开发。
