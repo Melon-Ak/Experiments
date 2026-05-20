@@ -29,6 +29,27 @@
 
 学习 Jetpack Compose 声明式 UI 框架，掌握 Compose 的核心概念和布局组件使用。通过实践熟练运用 Compose 进行现代化的 Android 界面开发。
 
+#### 2.1 创建新 Compose 项目
+
+在 Android Studio 中创建一个新的 Compose 项目，选择 Empty Compose Activity 模板，配置项目名称和目标设备。
+
+**创建项目截图：**
+![创建新Compose项目](images/compose_project_create.png)
+
+#### 2.2 行列按钮互动代码实现
+
+使用 Compose 的 Column、Row 布局组件和 Button 组件，实现行列按钮的互动效果。通过状态管理实现按钮点击后的响应逻辑。
+
+**代码截图：**
+![Compose行列按钮互动代码](images/compose_button_code.png)
+
+#### 2.3 运行效果
+
+完成代码编写后，运行应用查看实际效果，验证行列按钮互动功能是否正常工作。
+
+**运行效果截图：**
+![Compose运行效果](images/compose_run_result.png)
+
 ### 任务三：完成面向 AI 应用的 Compose 布局
 
 结合人工智能技术，设计并实现一个简单的 AI 应用界面。运用 Compose 布局组件展示 AI 功能界面，实践 Kotlin 与 AI 技术的结合应用。
