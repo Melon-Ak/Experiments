@@ -1,5 +1,9 @@
 本库是软件项目研发实践的GitHub库
 其中experiment1-4md文档为课上练习实验报告
-experiment2包含三个子实验 分别为2.1 2.2 2.3如名字所示
+experiment2包含三个子任务 分别为2.1 2.2 2.3如名字所示
+其中:
+MyFirstKotlinApp是实验2的任务1
+BasicsCodelab是实验2的任务2
+
 images保存了实验报告里的图片文件
 期末大作业为final
