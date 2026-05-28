@@ -76,6 +76,21 @@
 **代码与效果截图：**
 ![AI应用界面代码与效果](images/compose_ai_demo.png)
 
+#### 3.2 界面切换功能
+
+为了方便在同一个应用中查看任务二和任务三的效果，添加了底部导航栏功能，支持两个界面的快速切换。
+
+**实验注解：**
+- **对应文件**：`BasicsCodelab/app/src/main/java/com/example/basicscodelab/MainActivity.kt`
+- **核心组件**：`Scaffold` + `BottomAppBar` + `IconButton` 实现底部导航
+- **技术要点**：使用 `remember` 和 `mutableStateOf` 管理选中状态，`when` 表达式根据状态切换界面，动态标题栏
+
+**功能特点：**
+- 底部显示两个导航按钮（任务二/任务三）
+- 点击按钮即可切换界面
+- 当前选中的按钮高亮显示
+- 顶部标题栏随界面切换动态更新
+
 ***
 
 ## 四、实验总结
@@ -95,6 +110,6 @@
 | 文件路径 | 功能描述 | 对应任务 |
 |----------|----------|----------|
 | `MyFirstKotlinApp/MainActivity.kt` | 首个 Kotlin APP 入口 | 任务一 |
-| `BasicsCodelab/ui/Task2Screen.kt` | Compose 布局实践 | 任务二 |
-| `BasicsCodelab/ui/AIDemoScreen.kt` | AI 应用界面布局 | 任务三 |
-| `BasicsCodelab/MainActivity.kt` | 主应用入口（可切换任务） | - |
+| `BasicsCodelab/ui/Task2Screen.kt` | Compose 布局实践（Column、Row、ElevatedButton） | 任务二 |
+| `BasicsCodelab/ui/AIDemoScreen.kt` | AI 应用界面布局（TopAppBar、Card、IconButton） | 任务三 |
+| `BasicsCodelab/MainActivity.kt` | 主应用入口（底部导航切换任务二/三） | 公共 |
