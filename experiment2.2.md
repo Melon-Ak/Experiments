@@ -22,6 +22,11 @@
 
 按照官方 Android 教程，创建并运行第一个 Kotlin 编写的 Android 应用。熟悉 Android Studio 开发环境，掌握项目创建、代码编写、界面布局和运行调试的基本流程。
 
+**实验注解：**
+- **对应文件**：`MyFirstKotlinApp/app/src/main/java/com/example/myfirstkotlinapp/MainActivity.kt`
+- **核心组件**：使用 `Scaffold` 布局和 `Greeting` 组件实现简单的 Hello World 界面
+- **技术要点**：学习 Android 项目结构、Activity 生命周期、Compose 基础组件使用
+
 **完成截图：**
 ![任务一完成截图](images/MyFirstKotlinApp.png)
 
@@ -39,6 +44,11 @@
 #### 2.2 行列按钮互动代码实现
 
 使用 Compose 的 Column、Row 布局组件和 Button 组件，实现行列按钮的互动效果。通过状态管理实现按钮点击后的响应逻辑。
+
+**实验注解：**
+- **对应文件**：`BasicsCodelab/app/src/main/java/com/example/basicscodelab/ui/Task2Screen.kt`
+- **核心组件**：`MyApp` 函数使用 `Column` 遍历列表，`Greeting` 函数使用 `Row` + `Column` + `ElevatedButton` 组合布局
+- **技术要点**：声明式 UI、Compose 布局组件（Column、Row）、Material3 组件（Surface、ElevatedButton）、组件复用
 
 **代码截图：**
 ![Compose行列按钮互动代码](images/compose_button_code.png)
@@ -58,6 +68,11 @@
 
 设计一个基于 AI 图像识别的应用界面，包含顶部标题栏、相机预览区、识别结果展示区和功能按钮区。使用 Compose 的 Column、Row、Card、Button、Icon 等组件实现完整的界面布局。
 
+**实验注解：**
+- **对应文件**：`BasicsCodelab/app/src/main/java/com/example/basicscodelab/ui/AIDemoScreen.kt`
+- **核心组件**：`Scaffold` + `TopAppBar` 实现顶部导航，`Card` 组件展示识别结果，`Row` + `Column` 排列功能按钮
+- **技术要点**：Material3 `TopAppBar`、`Card` 组件使用、图标集成（Icons.Filled）、自定义颜色配置、响应式布局设计
+
 **代码与效果截图：**
 ![AI应用界面代码与效果](images/compose_ai_demo.png)
 
@@ -66,3 +81,20 @@
 ## 四、实验总结
 
 通过本次实验，系统学习了基于 Kotlin 语言的 Android 开发方法，熟练掌握了 Jetpack Compose 声明式 UI 开发框架的使用，为后续开发更复杂的 Android 应用奠定了基础。
+
+### 实验收获
+
+| 任务 | 知识点 | 技能提升 |
+|------|--------|----------|
+| 任务一 | Android 项目结构、Activity 基础 | 掌握项目创建和基本运行流程 |
+| 任务二 | Compose 布局组件（Column、Row）、Material3 组件 | 掌握声明式 UI 开发和组件复用 |
+| 任务三 | 复杂界面组合、图标集成、自定义样式 | 掌握实际应用界面设计和实现 |
+
+### 代码文件清单
+
+| 文件路径 | 功能描述 | 对应任务 |
+|----------|----------|----------|
+| `MyFirstKotlinApp/MainActivity.kt` | 首个 Kotlin APP 入口 | 任务一 |
+| `BasicsCodelab/ui/Task2Screen.kt` | Compose 布局实践 | 任务二 |
+| `BasicsCodelab/ui/AIDemoScreen.kt` | AI 应用界面布局 | 任务三 |
+| `BasicsCodelab/MainActivity.kt` | 主应用入口（可切换任务） | - |
