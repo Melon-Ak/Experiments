@@ -23,7 +23,7 @@
 
 使用 Android Studio 创建一个新的 Empty Views Activity 项目：
 
-![项目创建](https://via.placeholder.com/800x600?text=项目创建截图)
+![项目创建](images/project_create.png)
 
 ### 3.2 添加 CameraX 依赖
 
