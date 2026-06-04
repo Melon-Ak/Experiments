@@ -64,12 +64,7 @@
 - **技术要点**：ContentValues 设置、MediaStore 集成、异步回调处理
 
 **拍摄效果截图：**
-
-**图片 1：**
-![拍摄图片1](images/photo_1.png)
-
-**图片 2：**
-![拍摄图片2](images/photo_2.png)
+![拍摄图片](images/photo_1.png)
 
 ### 3.5 录制视频功能
 
