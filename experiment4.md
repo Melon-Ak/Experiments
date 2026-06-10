@@ -335,19 +335,13 @@ start/build/generated/mlDataBinding/debug/
 
 ## 九、实验结果截图
 
-> 请把以下两张图片放到 `Experiment4/images/` 目录中，文件路径可直接使用。
-
 **截图 1：补完 TODO + 所有错误已消除的 Android Studio 工程视图**
 
 ![工程完成截图](images/build_success.png)
 
-> 建议截图内容：Android Studio 打开 start 模块，Gradle Sync 成功、构建面板显示 BUILD SUCCESSFUL，MainActivity.kt 中 TODO 1~4 区域已填完代码。
-
 **截图 2：真机调试效果图（Camera 实时预览 + 花朵分类 Top-3 列表）**
 
 ![真机调试截图](images/runtime_result.jpg)
-
-> 建议截图内容：手机屏幕，相机对准一朵花（或任意物体），右下或右侧 RecyclerView 显示 Top 3 识别结果（label + 概率）。
 
 ---
 
