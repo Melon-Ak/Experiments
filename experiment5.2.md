@@ -290,6 +290,10 @@ model.save("rps.h5")
 - **对应代码**：`train_rps.py` 中的 matplotlib 绘图代码
 - **技术要点**：通过对比训练/验证曲线判断是否过拟合或欠拟合
 
+**训练曲线图：**
+
+![RPS 训练准确率与损失曲线](images/rps_training_curves.png)
+
 **可视化代码：**
 
 ```python
@@ -302,11 +306,27 @@ val_loss = history.history['val_loss']
 
 epochs = range(len(acc))
 
-plt.plot(epochs, acc, 'r', label='Training accuracy')
-plt.plot(epochs, val_acc, 'b', label='Validation accuracy')
-plt.title('Training and validation accuracy')
-plt.legend(loc=0)
-plt.figure()
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
+
+ax1.plot(epochs, acc, 'r', label='Training Accuracy')
+ax1.plot(epochs, val_acc, 'b', label='Validation Accuracy')
+ax1.set_xlabel('Epoch')
+ax1.set_ylabel('Accuracy')
+ax1.set_title('Training and Validation Accuracy')
+ax1.legend(loc='lower right')
+ax1.grid(True, alpha=0.3)
+
+ax2.plot(epochs, loss, 'r', label='Training Loss')
+ax2.plot(epochs, val_loss, 'b', label='Validation Loss')
+ax2.set_xlabel('Epoch')
+ax2.set_ylabel('Loss')
+ax2.set_title('Training and Validation Loss')
+ax2.legend(loc='upper right')
+ax2.grid(True, alpha=0.3)
+
+plt.suptitle('RPS CNN Training Results (25 Epochs)', fontweight='bold')
+plt.tight_layout()
+plt.savefig('rps_training_curves.png', dpi=150)
 plt.show()
 ```
 
@@ -314,6 +334,7 @@ plt.show()
 - 训练准确率从 36% 上升到 96%，表明模型成功学习了石头剪刀布的特征
 - 验证准确率最高达到 100%，模型泛化能力良好
 - 部分 epoch 出现验证准确率波动，属于正常现象（数据增强带来的随机性）
+- 训练损失从 1.48 稳步下降到 0.10，验证损失同步下降，没有出现明显过拟合
 
 ***
 

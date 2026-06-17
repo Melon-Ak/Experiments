@@ -1,0 +1,25 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Jupyter cache
+.ipynb_checkpoints/
+
+# TensorFlow / Keras cache
+.keras_cache/
+.mpl_cache/
+
+# IDE / Tool cache
+.workbuddy/
+.idea/
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Gradle cache
+.gradle/
+build/
+.local.properties
