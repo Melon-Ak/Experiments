@@ -256,6 +256,8 @@ model.compile(
 
 **训练过程示例：**
 
+![训练过程截图](images/rps_training_curves.png)
+
 | Epoch | Loss | Accuracy | Val Loss | Val Accuracy |
 |-------|------|----------|----------|-------------|
 | 1/25  | 1.4751 | 35.99% | 1.1369 | 33.33% |
